@@ -23,6 +23,7 @@ form.addEventListener('submit', e => {
 
     let formData = new FormData();
     formData.append('file', image);
+    $('#image').attr('src', "static/petpets/28a8947e168ea9129070a26e300a.gif");
 
     axios
         .post('/api/upload', formData, {
